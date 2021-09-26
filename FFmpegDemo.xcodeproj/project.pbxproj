@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C15B5DA2700074F00141A93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C15B5D92700074F00141A93 /* AppDelegate.swift */; };
+		4C15B5DC2700074F00141A93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C15B5DB2700074F00141A93 /* SceneDelegate.swift */; };
+		4C15B5DE2700074F00141A93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C15B5DD2700074F00141A93 /* ViewController.swift */; };
+		4C15B5E12700074F00141A93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C15B5DF2700074F00141A93 /* Main.storyboard */; };
+		4C15B5E32700075200141A93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C15B5E22700075200141A93 /* Assets.xcassets */; };
+		4C15B5E62700075200141A93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C15B5E42700075200141A93 /* LaunchScreen.storyboard */; };
+		4C15B5EF2700079500141A93 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C15B5EE2700079500141A93 /* libz.tbd */; };
+		4C15B5F12700079E00141A93 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C15B5F02700079E00141A93 /* libbz2.tbd */; };
+		4C15B5F3270007B000141A93 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C15B5F2270007B000141A93 /* libiconv.tbd */; };
+		4C15B5F5270007B800141A93 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C15B5F4270007B800141A93 /* CoreMedia.framework */; };
+		4C15B5F7270007C500141A93 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C15B5F6270007C500141A93 /* VideoToolbox.framework */; };
+		4C15B5F9270007D000141A93 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C15B5F8270007D000141A93 /* AVFoundation.framework */; };
+		4C15B7392700677C00141A93 /* FFformatConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C15B7382700677C00141A93 /* FFformatConverter.swift */; };
+		4C15B73F27007D2200141A93 /* demo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4C15B73D27007D2200141A93 /* demo.wav */; };
+		4C15B74027007D2200141A93 /* demo.aac in Resources */ = {isa = PBXBuildFile; fileRef = 4C15B73E27007D2200141A93 /* demo.aac */; };
+		758148E59FA367886C755FCE /* Pods_FFmpegDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EB2789A31F44CF4640ADCE /* Pods_FFmpegDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C15B5D62700074F00141A93 /* FFmpegDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFmpegDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C15B5D92700074F00141A93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C15B5DB2700074F00141A93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4C15B5DD2700074F00141A93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C15B5E02700074F00141A93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C15B5E22700075200141A93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C15B5E52700075200141A93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C15B5E72700075200141A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C15B5EE2700079500141A93 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4C15B5F02700079E00141A93 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		4C15B5F2270007B000141A93 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		4C15B5F4270007B800141A93 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4C15B5F6270007C500141A93 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		4C15B5F8270007D000141A93 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4C15B6862700091400141A93 /* FFmpegDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FFmpegDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		4C15B7382700677C00141A93 /* FFformatConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFformatConverter.swift; sourceTree = "<group>"; };
+		4C15B73D27007D2200141A93 /* demo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = demo.wav; sourceTree = "<group>"; };
+		4C15B73E27007D2200141A93 /* demo.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.aac; sourceTree = "<group>"; };
+		4F7E67A08DAF979A7180574E /* Pods-FFmpegDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFmpegDemo.release.xcconfig"; path = "Target Support Files/Pods-FFmpegDemo/Pods-FFmpegDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A0825D461CE488674C7A2A6F /* Pods-FFmpegDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFmpegDemo.debug.xcconfig"; path = "Target Support Files/Pods-FFmpegDemo/Pods-FFmpegDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D8EB2789A31F44CF4640ADCE /* Pods_FFmpegDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFmpegDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C15B5D32700074F00141A93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C15B5F9270007D000141A93 /* AVFoundation.framework in Frameworks */,
+				4C15B5F7270007C500141A93 /* VideoToolbox.framework in Frameworks */,
+				4C15B5F5270007B800141A93 /* CoreMedia.framework in Frameworks */,
+				4C15B5F3270007B000141A93 /* libiconv.tbd in Frameworks */,
+				4C15B5F12700079E00141A93 /* libbz2.tbd in Frameworks */,
+				4C15B5EF2700079500141A93 /* libz.tbd in Frameworks */,
+				758148E59FA367886C755FCE /* Pods_FFmpegDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C15B5CD2700074F00141A93 = {
+			isa = PBXGroup;
+			children = (
+				4C15B73C27007CF400141A93 /* Resources */,
+				4C15B5D82700074F00141A93 /* FFmpegDemo */,
+				4C15B5D72700074F00141A93 /* Products */,
+				4C15B5ED2700079500141A93 /* Frameworks */,
+				7B6B4B166841DBF7F8B10DF8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		4C15B5D72700074F00141A93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C15B5D62700074F00141A93 /* FFmpegDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C15B5D82700074F00141A93 /* FFmpegDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4C15B5D92700074F00141A93 /* AppDelegate.swift */,
+				4C15B5DB2700074F00141A93 /* SceneDelegate.swift */,
+				4C15B5DD2700074F00141A93 /* ViewController.swift */,
+				4C15B7382700677C00141A93 /* FFformatConverter.swift */,
+				4C15B5DF2700074F00141A93 /* Main.storyboard */,
+				4C15B5E22700075200141A93 /* Assets.xcassets */,
+				4C15B5E42700075200141A93 /* LaunchScreen.storyboard */,
+				4C15B5E72700075200141A93 /* Info.plist */,
+				4C15B6862700091400141A93 /* FFmpegDemo-Bridging-Header.h */,
+			);
+			path = FFmpegDemo;
+			sourceTree = "<group>";
+		};
+		4C15B5ED2700079500141A93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C15B5F8270007D000141A93 /* AVFoundation.framework */,
+				4C15B5F6270007C500141A93 /* VideoToolbox.framework */,
+				4C15B5F4270007B800141A93 /* CoreMedia.framework */,
+				4C15B5F2270007B000141A93 /* libiconv.tbd */,
+				4C15B5F02700079E00141A93 /* libbz2.tbd */,
+				4C15B5EE2700079500141A93 /* libz.tbd */,
+				D8EB2789A31F44CF4640ADCE /* Pods_FFmpegDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C15B73C27007CF400141A93 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C15B73E27007D2200141A93 /* demo.aac */,
+				4C15B73D27007D2200141A93 /* demo.wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7B6B4B166841DBF7F8B10DF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0825D461CE488674C7A2A6F /* Pods-FFmpegDemo.debug.xcconfig */,
+				4F7E67A08DAF979A7180574E /* Pods-FFmpegDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C15B5D52700074F00141A93 /* FFmpegDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C15B5EA2700075200141A93 /* Build configuration list for PBXNativeTarget "FFmpegDemo" */;
+			buildPhases = (
+				4EFE11B98D52A8BF2B10BE36 /* [CP] Check Pods Manifest.lock */,
+				4C15B5D22700074F00141A93 /* Sources */,
+				4C15B5D32700074F00141A93 /* Frameworks */,
+				4C15B5D42700074F00141A93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FFmpegDemo;
+			productName = FFmpegDemo;
+			productReference = 4C15B5D62700074F00141A93 /* FFmpegDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C15B5CE2700074F00141A93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					4C15B5D52700074F00141A93 = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
+					};
+				};
+			};
+			buildConfigurationList = 4C15B5D12700074F00141A93 /* Build configuration list for PBXProject "FFmpegDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C15B5CD2700074F00141A93;
+			productRefGroup = 4C15B5D72700074F00141A93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C15B5D52700074F00141A93 /* FFmpegDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C15B5D42700074F00141A93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C15B5E62700075200141A93 /* LaunchScreen.storyboard in Resources */,
+				4C15B74027007D2200141A93 /* demo.aac in Resources */,
+				4C15B73F27007D2200141A93 /* demo.wav in Resources */,
+				4C15B5E32700075200141A93 /* Assets.xcassets in Resources */,
+				4C15B5E12700074F00141A93 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EFE11B98D52A8BF2B10BE36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FFmpegDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C15B5D22700074F00141A93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C15B5DE2700074F00141A93 /* ViewController.swift in Sources */,
+				4C15B5DA2700074F00141A93 /* AppDelegate.swift in Sources */,
+				4C15B5DC2700074F00141A93 /* SceneDelegate.swift in Sources */,
+				4C15B7392700677C00141A93 /* FFformatConverter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C15B5DF2700074F00141A93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C15B5E02700074F00141A93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C15B5E42700075200141A93 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C15B5E52700075200141A93 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C15B5E82700075200141A93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C15B5E92700075200141A93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C15B5EB2700075200141A93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0825D461CE488674C7A2A6F /* Pods-FFmpegDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/FFmpeg-iOS/include";
+				INFOPLIST_FILE = FFmpegDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFmpeg-iOS/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.myx.FFmpegDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FFmpegDemo/FFmpegDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C15B5EC2700075200141A93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F7E67A08DAF979A7180574E /* Pods-FFmpegDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/FFmpeg-iOS/include";
+				INFOPLIST_FILE = FFmpegDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFmpeg-iOS/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.myx.FFmpegDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FFmpegDemo/FFmpegDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C15B5D12700074F00141A93 /* Build configuration list for PBXProject "FFmpegDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C15B5E82700075200141A93 /* Debug */,
+				4C15B5E92700075200141A93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C15B5EA2700075200141A93 /* Build configuration list for PBXNativeTarget "FFmpegDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C15B5EB2700075200141A93 /* Debug */,
+				4C15B5EC2700075200141A93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C15B5CE2700074F00141A93 /* Project object */;
+}
